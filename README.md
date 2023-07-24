@@ -2,6 +2,8 @@
 
 Launches a server in `localhost:5000` that transcribes audio files with `faster_whisper`. I recommend running it with docker to avoid dealing with cuda, venvs, and so on.
 
+`whisper-server` uses the `large-v2` version of whisper by default. If you want to use a smaller model version, make sure you preload it in the Dockerfile.
+
 ## Running with docker
 
 Build the docker image:
