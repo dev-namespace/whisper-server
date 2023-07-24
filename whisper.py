@@ -24,11 +24,11 @@ def transcribe(path, segmented=False):
 
 def transcribe_segments(path):
     segments, info = model.transcribe(path, beam_size=5)
-    segments = map(lambda s: ({
+    segments = list(map(lambda s: ({
         "text": s.text,
         "start": s.start,
         "end": s.end
-    }), segments)
+    }), segments))
     return {
         "language": info.language,
         "language_probability": info.language_probability,

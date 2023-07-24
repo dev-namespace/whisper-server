@@ -19,7 +19,7 @@ def transcribe_upload():
 @app.route('/transcribe_segments', methods=['POST'])
 def transcribe_upload_segments():
     with TempFile(request.files['file']) as path:
-        output = transcribe(path)
+        output = transcribe_segments(path)
         return jsonify(output)
 
 if __name__ == '__main__':
