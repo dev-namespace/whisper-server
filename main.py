@@ -14,6 +14,7 @@ def upload():
     path = os.path.join("./input_files", input_file.filename)
     input_file.save(path)
     output = transcribe(path)
+    os.remove(path)
     return jsonify(output)
 
 if __name__ == '__main__':
