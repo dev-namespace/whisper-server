@@ -1,6 +1,6 @@
 # Whisper Server
 
-Runs a server in `localhost:5000` that transcribes an audio file with `faster_whisper`. I recommend running `whisper-server` with docker to avoid dealing with cuda, venvs, and so on.
+Launches a server in `localhost:5000` that transcribes audio files with `faster_whisper`. I recommend running it with docker to avoid dealing with cuda, venvs, and so on.
 
 ## Running with docker
 
