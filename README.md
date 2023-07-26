@@ -23,7 +23,7 @@ docker run --gpus all -it -p 5000:5000 whisper-server
 
 Test it:
 ``` sh
-curl -X POST -F "file=@/path/input.wav" http://localhost:5000/upload
+curl -X POST -F "file=@/path/input.wav" http://localhost:5000/transcribe
 ```
 
 
